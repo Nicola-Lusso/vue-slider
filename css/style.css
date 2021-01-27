@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app{
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+}
+
+.slider {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  height: 60%;
+}
+
+.slider .images {
+  height: 80%;
+  text-align: center;
+}
+
+.images img {
+  height: 100%;
+}
+
+.prev{
+  position: absolute;
+  font-size: 40px;
+  color: darkblue;
+  top: 40%;
+  left: 0;
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  font-size: 40px;
+  color: darkblue;
+  top: 40%;
+  left: 0;
+  cursor: pointer;
+  left: auto;
+  right: 0;
+}
+
+.selector {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 100px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+
+.selector > i {
+  margin: 0px 30px;
+}
+.selector > i.active {
+  color: blue;
+}
