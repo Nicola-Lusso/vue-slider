@@ -8,7 +8,14 @@ var app = new Vue({
       'https://c4.wallpaperflare.com/wallpaper/336/733/268/landscape-coast-city-harbor-wallpaper-preview.jpg',
       'https://c4.wallpaperflare.com/wallpaper/161/296/845/nature-sea-water-turquoise-wallpaper-preview.jpg',
     ],
+    intervallo : ''
   },
+
+  // Scorrimento automatico ogni 2 secondi
+  created(){
+    this.intervallo = setInterval(this.nextImg, 2000);
+  },
+  
   methods: {
     nextImg(){
       if (this.counter == this.immagini.length - 1) {
